@@ -1,76 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9C27B0"
+    android:backgroundTint="#673AB7"
     tools:context=".Accueil">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="373dp"
-        android:layout_height="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
         android:gravity="center"
-        android:text="Choisir une d'opération"
-        android:textColor="@color/black"
-        android:textSize="80px"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="45dp"
-        tools:ignore="MissingConstraints" />
+        android:text="Choisir une opération"
+        android:textColor="#FFF"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="193dp"
-        android:layout_height="71dp"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:text="Depôt"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="113dp" />
+        android:layout_below="@id/textView"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="191dp"
-        android:layout_height="71dp"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
         android:text="Retrait"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:layout_below="@id/button2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="190dp"
-        android:layout_height="71dp"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
         android:text="Transfert"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="303dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="191dp"
-        android:layout_height="80dp"
-        android:backgroundTint="#CD247B"
-        android:text="Deconnexion"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="588dp" />
+        android:layout_below="@id/button3" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="238dp"
         android:layout_height="70dp"
         android:text="Historique"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="394dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_below="@id/button4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button"
+        android:text="Consulter" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="186dp"
-        android:layout_height="78dp"
-        android:text="Consulter"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="485dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_centerHorizontal="true"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/button5"
+        android:backgroundTint="#CD247B"
+        android:text="Deconnexion" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

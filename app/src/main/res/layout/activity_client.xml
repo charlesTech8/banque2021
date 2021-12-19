@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9C27B0"
+    android:backgroundTint="#673AB7"
     tools:context=".ClientActivity">
 
     <TextView
@@ -11,8 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
+        android:textColor="@color/white"
         android:layout_marginBottom="50dp"
         android:gravity="center"
 
@@ -26,16 +29,16 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/client"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="2dp"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
 
         android:hint="Nom"
         android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/prenom"
@@ -50,9 +53,9 @@
         android:drawablePadding="20dp"
 
         android:hint="Prénom"
-        android:padding="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:layout_width="match_parent"
@@ -60,10 +63,10 @@
         android:id="@+id/sexe"
         android:layout_below="@id/prenom"
         android:hint="Sexe"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="5dp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
 
@@ -75,10 +78,10 @@
         android:id="@+id/Adresse"
         android:layout_below="@id/sexe"
         android:hint="Adresse"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="5dp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/ic_baseline_add_location_24"
         android:drawablePadding="20dp"
 
@@ -86,29 +89,31 @@
 
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
         android:layout_below="@id/Adresse"
-        android:hint="Email"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:layout_margin="5dp"
-        android:padding="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="20dp"
 
-        />
+        android:hint="Email"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/phone"
         android:layout_below="@id/email"
         android:hint="Téléphone"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="5dp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
         android:drawablePadding="20dp"
 
@@ -120,10 +125,10 @@
         android:id="@+id/mdp"
         android:layout_below="@id/phone"
         android:hint="Mot de passe"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_margin="5dp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:drawableLeft="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
 
