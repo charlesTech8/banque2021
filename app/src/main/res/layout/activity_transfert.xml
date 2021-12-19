@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    android:backgroundTint="#673AB7"
+    tools:context=".transfert">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transfert"
+        android:text="Transfert"
+        android:textColor="#FFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sender"
+        android:layout_below="@+id/transfert"
+        android:background="#3Bffffff"
+        android:hint="Numéro de compte sender"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:padding="23dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/montant"
+        android:layout_below="@+id/sender"
+        android:background="#3Bffffff"
+        android:hint="Montant"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:padding="23dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/montant"
+        android:background="#30ffffff"
+        android:hint="Mot de passe"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:padding="23dp"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        />
+
+
+<Button
+    android:layout_width="1000dp"
+    android:layout_height="50dp"
+    android:id="@+id/soldbtn"
+    android:layout_below="@id/password"
+    android:text="SOLDE"
+    android:backgroundTint="#ffffff"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="10dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/receveur"
+        android:layout_below="@+id/soldbtn"
+        android:background="#30ffffff"
+        android:hint="Numéro de compte receveur"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:padding="23dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/validerbtn"
+        android:layout_below="@id/receveur"
+        android:text="VALIDER"
+        android:backgroundTint="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
