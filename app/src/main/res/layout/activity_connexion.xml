@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".connexion">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="336dp"
+        android:layout_height="79dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Entrer vos informations  pour vous connecter "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FA332C2C"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="168dp"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="175dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:text="Mot de passe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="175dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="219dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#96BFBB"
+        android:text="Se connecter"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="606dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="239dp"
+        android:layout_height="64dp"
+        android:text="Connexion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColorHint="#000000"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="150dp"
+        android:layout_height="8dp"
+
+        android:background="?android:attr/listDivider"
+
+        android:backgroundTint="@color/teal_200"
+        android:backgroundTintMode="src_over"
+        android:foregroundTint="#C100C853"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
