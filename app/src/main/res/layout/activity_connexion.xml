@@ -33,17 +33,22 @@
         android:textSize="26sp" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
         android:layout_below="@id/textView4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
         android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:background="#3Bffffff"
-        android:text=" Email"
-        android:textColorHint="#ffffff"
+        android:padding="23dp"
+        android:hint="Email"
         android:textColor="#ffffff"
-        android:layout_margin="10dp"
-        android:padding="23dp" />
+        android:textColorHint="#ffffff"
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/password"
@@ -58,10 +63,10 @@
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="Mot de passe"
+        android:inputType="textWebPassword"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="textVisiblePassword"/>
+        android:textColorHint="#ffffff" />
 
     <Button
         android:id="@+id/button"
