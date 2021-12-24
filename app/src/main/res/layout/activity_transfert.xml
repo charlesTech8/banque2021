@@ -60,10 +60,10 @@
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="Mot de passe"
+        android:inputType="textWebPassword"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="textVisiblePassword"/>
+        android:textColorHint="#ffffff" />
 
 
     <Button
