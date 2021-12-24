@@ -18,16 +18,27 @@
         android:textSize="35dp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/client"
+        android:layout_width="238dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Add New Client"
+        tools:ignore="MissingConstraints"
+        android:onClick="client"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="238dp"
         android:layout_height="70dp"
+        android:layout_below="@id/client"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="Depôt"
-        android:layout_below="@id/textView"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="depot"/>
 
     <Button
         android:id="@+id/button3"
@@ -36,7 +47,8 @@
         android:layout_centerHorizontal="true"
         android:text="Retrait"
         android:layout_below="@id/button2"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:onClick="retrait"/>
 
     <Button
         android:id="@+id/button4"
@@ -44,7 +56,8 @@
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:text="Transfert"
-        android:layout_below="@id/button3" />
+        android:layout_below="@id/button3"
+        android:onClick="transfert"/>
 
     <Button
         android:id="@+id/button"
@@ -52,7 +65,8 @@
         android:layout_width="238dp"
         android:layout_height="70dp"
         android:text="Historique"
-        android:layout_below="@id/button4" />
+        android:layout_below="@id/button4"
+        android:onClick="historique"/>
 
     <Button
         android:id="@+id/button5"
@@ -60,7 +74,8 @@
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/button"
-        android:text="Consulter" />
+        android:text="Consulter"
+        android:onClick="consulter"/>
 
     <Button
         android:id="@+id/button6"
@@ -69,6 +84,7 @@
         android:layout_height="70dp"
         android:layout_below="@id/button5"
         android:backgroundTint="#CD247B"
-        android:text="Deconnexion" />
+        android:text="Deconnexion"
+        android:onClick="deconnexion"/>
 
 </RelativeLayout>

@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Banque2021">
         <activity
-            android:name=".MainActivity"
+            android:name=".Client"
+            android:exported="false" />
+        <activity
+            android:name=".Connexion"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Transfert"
+            android:exported="false" />
+        <activity
+            android:name=".Accueil"
+            android:exported="false" />
+        <activity
+            android:name=".Retrait"
+            android:exported="false" />
+        <activity
+            android:name=".Depot"
+            android:exported="false" />
     </application>
 
 </manifest>

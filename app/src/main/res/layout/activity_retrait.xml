@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#9C27B0"
     android:backgroundTint="#673AB7"
-    tools:context=".Transfert">
+    tools:context=".Retrait">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/transfert"
-        android:text="Transfert"
+        android:id="@+id/retrait"
+        android:text="Retrait"
         android:textColor="#FFF"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -21,10 +21,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sender"
-        android:layout_below="@+id/transfert"
+        android:id="@+id/numerocompte"
+        android:layout_below="@+id/retrait"
         android:background="#3Bffffff"
-        android:hint="Numéro de compte sender"
+        android:hint="Numéro de compte"
         android:textColorHint="#ffffff"
         android:textColor="#ffffff"
         android:layout_margin="10dp"
@@ -35,7 +35,7 @@
         android:id="@+id/montant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sender"
+        android:layout_below="@+id/numerocompte"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -68,43 +68,16 @@
 
     <Button
         android:id="@+id/soldbtn"
-        android:layout_width="1000dp"
-        android:layout_height="50dp"
+        android:layout_width="242dp"
+        android:layout_height="64dp"
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#ffffff"
-        android:text="VERIFIE INFO"
-        android:textColor="@color/black" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/receveur"
-        android:layout_below="@+id/soldbtn"
-        android:background="#30ffffff"
-        android:hint="Numéro de compte receveur"
-        android:textColorHint="#ffffff"
-        android:textColor="#ffffff"
-        android:layout_margin="10dp"
-        android:padding="23dp"
-        android:inputType="number"/>
-
-    <Button
-        android:id="@+id/validerbtn"
-        android:layout_width="138dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/receveur"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:backgroundTint="#000000"
         android:text="VALIDER"
-        android:textColor="@color/design_default_color_surface" />
+        android:textColor="@color/black" />
 
 </RelativeLayout>

@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_accueil.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_client.xml" value="0.25" />
+        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_client.xml" value="0.22" />
+        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_connexion.xml" value="0.22" />
+        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_depot.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_transfert.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_retrait.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/gboyo/Documents/banque2021/app/src/main/res/layout/activity_transfert.xml" value="0.18" />
       </map>
     </option>
   </component>
@@ -16,5 +19,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="banque2021.app" />
+      </set>
+    </option>
   </component>
 </project>
