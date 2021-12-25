@@ -42,13 +42,13 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawablePadding="20dp"
         android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:padding="23dp"
+        android:drawablePadding="20dp"
         android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="textEmailAddress"/>
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/password"
@@ -69,7 +69,7 @@
         android:textColorHint="#ffffff" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnConnexion"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="221dp"
         android:layout_height="62dp"
@@ -83,7 +83,6 @@
         android:textSize="22sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="606dp"
-        android:onClick="connexion"/>
+        tools:layout_editor_absoluteY="606dp" />
 
 </RelativeLayout>
