@@ -34,7 +34,7 @@ CREATE TABLE `client` (
   `prenom` varchar(100) NOT NULL,
   `adresse` varchar(255) NOT NULL,
   `email` text UNIQUE NOT NULL,
-  `telephone` int(11) NOT NULL,
+  `telephone` int(11) UNIQUE NOT NULL,
   `pwd` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
