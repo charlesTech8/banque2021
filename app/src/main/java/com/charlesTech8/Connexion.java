@@ -41,8 +41,8 @@ public class Connexion extends AppCompatActivity {
         _btnConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = _email.getText().toString();
-                String passwd = _pwd.getText().toString();
+                String user = _email.getText().toString().trim();
+                String passwd = _pwd.getText().toString().trim();
                 bg background = new bg(Connexion.this);
                 background.execute(user,passwd);
             }
@@ -71,7 +71,7 @@ public class Connexion extends AppCompatActivity {
             String user = strings[0];
             String pass = strings[1];
             //pour savoir votre adresse ip: lancer la commande "ipconfig" avec le programme cmd
-            String connstr = "http://172.19.192.1/banque2021/login.php";
+            String connstr = "http://192.168.200.149/banque2021/login.php";
             try {
                 URL url = new URL(connstr);
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
@@ -111,7 +111,9 @@ public class Connexion extends AppCompatActivity {
         protected void onPostExecute(String s) {
             dialog.setMessage(s);
             try {
-                dialog.show();
+                if(!(s.contains("succes"))){
+                    dialog.show();
+                }
             } catch (Exception e){
                 Log.e("errorpost",e.getMessage());
             }
