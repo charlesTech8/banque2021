@@ -19,17 +19,20 @@
         android:gravity="center" />
 
     <EditText
+        android:id="@+id/numerocompte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/numerocompte"
         android:layout_below="@+id/retrait"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#3Bffffff"
         android:hint="Numéro de compte"
-        android:textColorHint="#ffffff"
-        android:textColor="#ffffff"
-        android:layout_margin="10dp"
+        android:inputType="number"
         android:padding="23dp"
-        android:inputType="number"/>
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/montant"
@@ -42,10 +45,10 @@
         android:layout_marginBottom="10dp"
         android:background="#3Bffffff"
         android:hint="Montant"
+        android:inputType="number"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="number"/>
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/password"
@@ -60,14 +63,14 @@
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="Mot de passe"
+        android:inputType="textVisiblePassword"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="textVisiblePassword"/>
+        android:textColorHint="#ffffff" />
 
 
     <Button
-        android:id="@+id/soldbtn"
+        android:id="@+id/soldebtn"
         android:layout_width="242dp"
         android:layout_height="64dp"
         android:layout_below="@id/password"

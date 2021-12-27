@@ -66,7 +66,7 @@ public class Client extends AppCompatActivity {
         protected void onPreExecute() {
 
             dialog = new AlertDialog.Builder(c).create();
-            dialog.setTitle("Etat de connexion");
+            dialog.setTitle("Etat");
         }
 
         @Override
@@ -103,8 +103,6 @@ public class Client extends AppCompatActivity {
                 String ligne ="";
                 while ((ligne = reader.readLine())!= null){
                     result = result + ligne;
-                    // ou bien result += ligne;
-
                 }
                 reader.close();
                 ips.close();

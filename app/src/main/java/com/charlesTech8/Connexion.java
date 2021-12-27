@@ -63,8 +63,6 @@ public class Connexion extends AppCompatActivity {
             dialog.setTitle("Etat de connexion");
         }
 
-
-
         @Override
         protected String doInBackground(String... strings) {
             String result  ="";
