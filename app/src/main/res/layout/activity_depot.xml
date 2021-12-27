@@ -25,32 +25,35 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/numerocompte"
         android:layout_marginBottom="50dp"
-        android:padding="10dp"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
+        android:padding="10dp"
         android:text="NB: Vérifier bien les informations avant validations. "
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:textSize="26sp" />
 
     <EditText
+        android:id="@+id/numeroC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sender"
         android:layout_below="@+id/nbtext"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#3Bffffff"
         android:hint="Numéro de compte"
-        android:textColorHint="#ffffff"
-        android:textColor="#ffffff"
-        android:layout_margin="10dp"
+        android:inputType="number"
         android:padding="23dp"
-        android:inputType="number"/>
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/montant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sender"
+        android:layout_below="@+id/numeroC"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -60,10 +63,10 @@
         android:inputType="number"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"/>
+        android:textColorHint="#ffffff" />
 
     <Button
-        android:id="@+id/soldbtn"
+        android:id="@+id/soldebtn"
         android:layout_width="209dp"
         android:layout_height="70dp"
         android:layout_below="@id/montant"

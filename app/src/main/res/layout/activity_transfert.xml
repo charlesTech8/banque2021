@@ -8,21 +8,36 @@
     tools:context=".Transfert">
 
     <TextView
+        android:id="@+id/transfert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/transfert"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
         android:text="Transfert"
         android:textColor="#FFF"
         android:textSize="35dp"
-        android:textStyle="bold"
-        android:layout_margin="50dp"
-        android:gravity="center" />
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nbtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transfert"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="NB: Vérifier bien les informations avant validation. "
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="26sp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sender"
-        android:layout_below="@+id/transfert"
+        android:layout_below="@+id/nbtext"
         android:background="#3Bffffff"
         android:hint="Numéro de compte sender"
         android:textColorHint="#ffffff"
@@ -42,10 +57,10 @@
         android:layout_marginBottom="10dp"
         android:background="#3Bffffff"
         android:hint="Montant"
+        android:inputType="number"
         android:padding="23dp"
         android:textColor="#ffffff"
-        android:textColorHint="#ffffff"
-        android:inputType="number"/>
+        android:textColorHint="#ffffff" />
 
     <EditText
         android:id="@+id/password"
@@ -65,26 +80,11 @@
         android:textColor="#ffffff"
         android:textColorHint="#ffffff" />
 
-
-    <Button
-        android:id="@+id/soldbtn"
-        android:layout_width="1000dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#ffffff"
-        android:text="VERIFIE INFO"
-        android:textColor="@color/black" />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/receveur"
-        android:layout_below="@+id/soldbtn"
+        android:layout_below="@+id/password"
         android:background="#30ffffff"
         android:hint="Numéro de compte receveur"
         android:textColorHint="#ffffff"
@@ -95,8 +95,8 @@
 
     <Button
         android:id="@+id/validerbtn"
-        android:layout_width="138dp"
-        android:layout_height="60dp"
+        android:layout_width="167dp"
+        android:layout_height="71dp"
         android:layout_below="@id/receveur"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
@@ -105,6 +105,7 @@
         android:layout_marginBottom="30dp"
         android:backgroundTint="#000000"
         android:text="VALIDER"
+        android:textSize="20dp"
         android:textColor="@color/design_default_color_surface" />
 
 </RelativeLayout>

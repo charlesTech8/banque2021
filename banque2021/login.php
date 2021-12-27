@@ -1,18 +1,25 @@
 <?php 
-$db = "banque2021";
-$user = $_POST['user'];
-$pass = $_POST['pass'];
-$host = "localhost";
+require_once('connexion.php');
 
-$connexion = mysqli_connect($host, "root", "", $db);
+$user = formatChamp($_POST['user']);
+$pass = formatPass($_POST['pass']);
+
 if($connexion){
-    $sql = "SELECT * FROM user WHERE email like '$user' AND pwd like $pass";
-    $resultat = mysqli_query( $connexion, $sql );
-    if(mysqli_num_rows( $resultat ) > 0 ){
-        echo "success";
+    if( isEmail( $user ) ){
+        $sql =  'SELECT * FROM user WHERE email = :user AND pwd = :pass';
+        $resultat = $connexion->prepare($sql);
+        $resultat->execute(array(
+            'user' => $user,
+            'pass' => $pass
+        ));
+        if($resultat->rowCount() > 0 ){
+            echo "success";
+        }else{
+            echo "echec";
+        }$resultat->closeCursor();
     }else{
-        echo "echec";
-    }mysqli_close( $connexion );
+        echo 'Veuillez entrer un mail valide';
+    }
 }else{
     echo "Problème de connexion";
 }

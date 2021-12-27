@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.charlesTech8">
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +11,9 @@
         android:theme="@style/Theme.Banque2021"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ConnexionBd"
+            android:exported="false" />
+        <activity
             android:name=".Client"
             android:exported="false" />
         <activity
@@ -19,6 +21,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,5 +38,7 @@
             android:name=".Depot"
             android:exported="false" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

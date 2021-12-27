@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#9C27B0"
     android:backgroundTint="#673AB7"
+    android:gravity="center_vertical"
     tools:context=".Client">
 
     <TextView
@@ -53,26 +54,12 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
+
     <EditText
+        android:id="@+id/adresse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sexe"
         android:layout_below="@id/prenom"
-        android:hint="Sexe"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_margin="5dp"
-        android:padding="15dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawablePadding="20dp"
-
-        />
-
-    <EditText
-        android:id="@+id/Adresse"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sexe"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -90,7 +77,7 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Adresse"
+        android:layout_below="@id/adresse"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -138,7 +125,7 @@
         android:textColorHint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btncréer"
+        android:id="@+id/btncreer"
         android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mdp"
