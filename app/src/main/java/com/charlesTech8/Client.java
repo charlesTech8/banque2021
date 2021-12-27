@@ -78,8 +78,8 @@ public class Client extends AppCompatActivity {
             String email = strings[3];
             String telephone = strings[4];
             String mdp = strings[5];
-            //pour savoir votre adresse ip: lancer la commande "ipconfig" avec le programme cmd
-            String connstr = "http://192.168.200.149/banque2021/client_insc.php";
+            ConnexionBd ConBd = new ConnexionBd();
+            String connstr = ConBd.valCon("client_insc.php");
 
             try {
                 URL url = new URL(connstr);
@@ -129,10 +129,13 @@ public class Client extends AppCompatActivity {
                 Log.e("errorpost",e.getMessage());
             }
 
-            if (s.contains("succes")){
-                Intent i = new Intent();
-                i.setClass(c.getApplicationContext(),Accueil.class);
-                startActivity(i);
+            if (s.contains("Inscription succes")){
+                _nom.setText("");
+                _prenom.setText("");
+                _adresse.setText("");
+                _email.setText("");
+                _telephone.setText("");
+                _mdp.setText("");
             }
         }
     }

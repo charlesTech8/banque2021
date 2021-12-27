@@ -70,8 +70,8 @@ public class Connexion extends AppCompatActivity {
             String result  ="";
             String user = strings[0];
             String pass = strings[1];
-            //pour savoir votre adresse ip: lancer la commande "ipconfig" avec le programme cmd
-            String connstr = "http://192.168.200.149/banque2021/login.php";
+            ConnexionBd ConBd = new ConnexionBd();
+            String connstr = ConBd.valCon("login.php");
             try {
                 URL url = new URL(connstr);
                 HttpURLConnection http = (HttpURLConnection) url.openConnection();
