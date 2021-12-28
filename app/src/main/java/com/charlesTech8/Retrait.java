@@ -87,7 +87,7 @@ public class Retrait extends AppCompatActivity {
                 writer.flush();
                 writer.close();
                 InputStream ips = http.getInputStream();
-                BufferedReader reader = new BufferedReader(new InputStreamReader(ips, "ISO-8859-1"));
+                BufferedReader reader = new BufferedReader(new InputStreamReader(ips, "UTF-8"));
                 String ligne ="";
                 while ((ligne = reader.readLine())!= null){
                     result = result + ligne;
