@@ -11,6 +11,12 @@
         android:theme="@style/Theme.Banque2021"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Historique"
+            android:exported="false" />
+        <activity
+            android:name=".Consulter"
+            android:exported="false" />
+        <activity
             android:name=".ConnexionBd"
             android:exported="false" />
         <activity

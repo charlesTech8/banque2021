@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9C27B0"
+    android:backgroundTint="#673AB7"
+    tools:context=".Consulter">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Consulter"
+        android:textColor="#FFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/nbtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:padding="1dp"
+        android:text="NB: Consulter le compte d'un client"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/numerocompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nbtext"
+        android:layout_margin="10dp"
+        android:background="#3Bffffff"
+        android:hint="Numéro de compte"
+        android:inputType="number"
+        android:padding="23dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numerocompte"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="Mot de passe"
+        android:inputType="textVisiblePassword"
+        android:padding="23dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="209dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#ffffff"
+        android:text="CONSULTER"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnConsulter"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/nomClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#006064"
+            android:backgroundTint="#006064"
+            android:hint="NOM"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/prenomClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nomClient"
+            android:layout_margin="5dp"
+            android:background="#006064"
+            android:backgroundTint="#006064"
+            android:hint="PRENOM"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/soldeClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prenomClient"
+            android:layout_margin="5dp"
+            android:background="#006064"
+            android:backgroundTint="#006064"
+            android:hint="SOLDE"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/etatClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/soldeClient"
+            android:layout_margin="5dp"
+            android:background="#006064"
+            android:backgroundTint="#006064"
+            android:hint="ETAT"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
